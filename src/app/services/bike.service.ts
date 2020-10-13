@@ -26,4 +26,8 @@ export class BikeService {
     return this.http.post('/server/api/v1/bikes', body, httpOptions)
   }
 
+  removeBike(id: number) {
+    return this.http.delete('/server/api/v1/bikes/' + id);
+  }
+
 }
